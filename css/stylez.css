@@ -1,0 +1,342 @@
+#block-header{
+    width: 1200px;
+    height: 100px;
+    position:fixed;
+    background: rgb(255, 255, 255);
+	margin-top: -1px;/*создаёт отступ после рамки*/
+    z-index: 9999;
+}
+#block-body{
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+}
+#block-content{
+    width: 1200px;
+    height: auto;
+    float: left;
+    margin-top: 100px;
+}
+#block-footer{
+    width: 1200px;
+    height: 27px;
+    margin-top: 10px;
+    clear: both;
+    background: rgb(255, 115, 0);
+}
+#img-logo{
+    margin-left: 0px;
+    margin-top: 0px;/*расширяет поле до границы элемента, в том числе отрицательные*/
+}
+#category{
+    margin-left: 275px;
+    margin-top: -75px;
+}
+.block-category{
+    width: 620px;
+    height: auto;
+    text-align: center;
+}
+.category-title{
+    width: 620px;
+    color: white;
+    font: bold 20px sans-serif;
+    border: 1px solid red;
+    height: 23px;
+    z-index: 1000;
+    background: rgb(255, 115, 0);
+    padding: 10px;
+}
+.block-category:hover .block-category-run{
+    display: block;
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 0px;
+    z-index: 1000;
+    width: 620px;
+    height: auto;
+}
+.block-category-run{
+    display: none;
+    padding: 3px 10px 3px 10px;
+    background: white;
+    height: 200px;
+    border: 1px solid #EFEFEF;
+}
+.block-category-run > ul > li{
+    border-bottom: 1px solid #FF7300;
+    list-style-type: none;
+}
+.block-category-run > ul > li > a{
+    font: 15px sans-serif;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+    display: block;
+    cursor: pointer;
+    text-decoration: none;
+    color: red;
+    text-align: left;
+}
+.block-category-run > ul > li > a:hover{
+    background-color: #FFE6C1;
+}
+.block-category-run > ul > li > a.active{
+    background-color: red;
+}
+#nav-breadcrumbs{
+    margin-top: 5px;
+}
+#nav-breadcrumbs a{
+    font: 13px sans-serif;
+    color: black;
+}
+#nav-breadcrumbs a:hover{
+    color: #E20000;
+}
+#nav-breadcrumbs > span{
+    font: 14px sans-serif;
+    color: grey;
+}
+#block-sorting{
+    height: 60px;
+    border-bottom: 1px solid #FF7300;
+    z-index: 9998;
+    position: relative;
+}
+#options-list{
+    margin-top: 10px;
+    margin-left: -10px;
+}
+#options-list > li{
+    float: left;
+    margin-left: 10px;
+    font: 14px sans-serif;
+    list-style-type: none;
+}
+#options-list img{
+    margin-top: -4px;
+    cursor: pointer;
+}
+.select-sort{
+    margin-top: -10px;
+    width: 266px;
+    font: 14px sans-serif;
+    height: 23px;
+    z-index: 1000;
+    padding: 10px;
+    cursor: pointer;
+}
+.select-sort:hover .select-sort-run{
+    display: block;
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 0px;
+    z-index: 1000;
+    width: 266px;
+    height: auto;
+}
+.select-sort-run{
+    display: none;
+    padding: 3px 5px 3px 5px;
+    background: white;
+    height: 200px;
+    border: 1px solid #EFEFEF;
+}
+.select-sort-run > ul > li{
+    border-bottom: 1px solid #FF7300;
+    list-style-type: none;
+}
+.select-sort-run a{
+    font: 15px sans-serif;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+    display: block;
+    cursor: pointer;
+    text-decoration: none;
+    color: red;
+    text-align: left;
+}
+.select-sort-run a:hover{
+    background-color: #FFE6C1;
+}
+.sorting-list a:active{
+    background-color: red;
+}
+#block-recipe-grid > li{
+    width: 380px;
+    height: 350px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 15px;
+    list-style-type: none;
+}
+.style-title-grid{
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.style-title-grid a{
+    font: bold 15px sans-serif;
+    color: #FF0000;
+    text-decoration: underline;
+}
+.style-title-grid a:hover{
+    color: #FF7300;
+}
+.block-images-grid{
+    height: auto;
+    width: 230px;
+    float: left;
+}
+.reviews-and-counts-grid{
+    height: 20px;
+    margin-top: 5px;
+}
+.reviews-and-counts-grid > li{
+    float: right;
+    margin-right: 20px;
+    margin-top: 3px;
+    list-style-type: none;
+}
+.reviews-and-counts-grid > li > p{
+    margin-left: 25px;
+    margin-top: 1px;
+    font: 12px sans-serif;
+}
+.reviews-and-counts-grid > li > img{
+    position: absolute;
+}
+#block-recipe-list{
+    display: none;
+}
+.block-images-list{
+    float: left;
+    margin-right: 15px;
+    min-height: 160px;
+    height: auto;
+}
+#block-recipe-list > li{
+    border-bottom: 1px solid #FF7300;
+    min-height: 160px;
+    height: auto;
+    margin-top: 15px;
+    padding-bottom: 5px;
+    list-style-type: none;
+}
+.reviews-and-counts-list{
+    position: absolute;
+    margin-left: 1150px;
+}
+.reviews-and-counts-list > li{
+    float: left;
+    margin-left: 10px;
+    margin-top: 3px;
+    list-style-type: none;
+}
+.reviews-and-counts-list > li > p{
+    margin-left: 25px;
+    margin-top: 1px;
+    font: 12px sans-serif;
+}
+.reviews-and-counts-list > li > img{
+    position: absolute;
+}
+.style-mini-description-list{
+    font: 15px sans-serif;
+    margin: 0;
+}
+.footer-list{
+    width: 200px;
+    float: left;
+    margin-left: 10px;
+}
+.h2-title{
+    font: 25px sans-serif;
+    border-bottom: 1px solid #FF7300;
+    padding-bottom: 3px;
+}
+#block-breadcrumbs-and-rating{
+    height: 50px;
+    margin-top: 10px;
+    border-bottom: 1px solid #FF7300;
+}
+#block-content-info{
+    height: 320px;
+    margin-top: 15px;
+}
+#block-content-info img{
+    float: left;
+    margin-top: 0px;
+    margin-right: 15px;
+}
+#block-mini-description{
+    width: 600px;
+    float: left;
+}
+#content-title{
+    font: 23px sans-serif;
+    margin: 0;
+}
+#content-text{
+    font: 18px sans-serif;
+    margin-top: 10px;
+}
+ul.tabs {
+    margin-top: 15px;
+    list-style: none;
+    width: 100%;
+    height: 23px;
+}
+.tabs li {
+    float: left; 
+    width: 1200px;
+}
+#title1{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    display: block;
+    color: white; 
+    outline: none; 
+    text-decoration: none; 
+    font: bold 18px sans-serif;
+    border: 1px solid red; 
+    background-color: #FF7300;
+}
+.tabs li p{
+    font: 15px sans-serif;
+}
+.reviews-and-counts{
+    margin-left: 630px;
+    width: 1200px;
+    height: 30px;
+    margin-top: -19px;
+}
+.reviews-and-counts > li{
+    float: left;
+    list-style-type: none;
+}
+.reviews-and-counts > li > p{
+    margin-left: 20px;
+    font: 16px sans-serif;
+    margin-top: -2px;
+    position: absolute;
+}
+#data{
+    font: 16px sans-serif;
+}
+.block-reviews{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.author-date{
+    font: 14px sans-serif;
+    margin-left: 20px;
+    color: #8C8C8C;
+}
+.text-comment{
+    font: 15px sans-serif;
+    margin-left: 50px;
+    margin-right: 100px;
+}
